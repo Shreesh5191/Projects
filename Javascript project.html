@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    img {
+        height: 50px;
+        width: 50px;
+    }
+
+    input {
+        margin-left: 20px;
+    }
+</style>
+
+<body>
+    <h1>Cash Count</h1>
+
+    <img src="https://m.economictimes.com/thumb/msid-60763663,width-1200,height-900,resizemode-4,imgsize-55940/500-picture-cms.jpg"
+        alt="">
+    <input type="text" name="" id="one" oninput="main()"> =
+    <input type="text" name="" id="two" readonly>
+    <br>
+    <img src="https://m.media-amazon.com/images/I/617lJCDHToL._AC_UY1100_.jpg" alt="">
+    <input type="text" name="" id="three" oninput="main()"> =
+    <input type="text" name="" id="four" readonly>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-ER_S5NsqQNt-8y3XWAvIwrAX_ykPsS9a3I_9IajBYg&s">
+    <input type="text" name="" id="five" oninput="main()"> =
+    <input type="text" name="" id="six" readonly>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/en/9/90/India_Fifty_Rupees_note.jpg" alt="">
+    <input type="text" name="" id="seven" oninput="main()"> =
+    <input type="text" name="" id="fight" readonly>
+    <br>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/53/India_new_20_INR%2C_MG_series%2C_2019%2C_obverse.jpg"
+        alt="">
+    <input type="text" name="" id="nine" oninput="main()"> =
+    <input type="text" name="" id="ten" readonly>
+    <br>
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQLmTdgQyINgnFlpyurMQV8Wkb_RZJW__KlVlFwJhnm5A&s"
+        alt="">
+    <input type="text" name="" id="evelven" oninput="main()"> =
+    <input type="text" name="" id="twel" readonly>
+
+    <br>
+    <h1>TOtal Cash: <span id="total"></span></h1>
+    <br>
+    <h1>Total Notes: <span id="notes"></span></h1>
+    <script>
+        function main() {
+            let a = document.getElementById("one").value;
+            let b = document.getElementById("three").value;
+            let c = document.getElementById("five").value;
+            let d = document.getElementById("seven").value;
+            let e = document.getElementById("nine").value;
+            let f = document.getElementById("evelven").value;
+
+            let total1 = document.getElementById("two").value = a * 500;
+            let total2 = document.getElementById("four").value = b * 200;
+            let total3 = document.getElementById("six").value = c * 100;
+            let total4 = document.getElementById("fight").value = d * 50;
+            let total5 = document.getElementById("ten").value = e * 20;
+            let total6 = document.getElementById("twel").value = f * 10;
+
+            document.getElementById("total").innerHTML = total1 + total2 + total3 + total4 + total5 + total6;
+
+            document.getElementById("notes").innerHTML =  a + b + c + d + e + f ;
+        }
+    </script>
+</body>
+
+
+
+</html>
